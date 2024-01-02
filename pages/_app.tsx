@@ -1,7 +1,7 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { createGlobalStyle } from 'styled-components'
-import Head from 'next/head'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import { createGlobalStyle } from "styled-components";
+import Head from "next/head";
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -22,10 +22,10 @@ const GlobalStyle = createGlobalStyle`
   ou ul {
     list-style: none;
   }
-`
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return(
+  return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
