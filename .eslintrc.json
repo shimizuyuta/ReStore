@@ -18,6 +18,12 @@
         }
       }
     ],
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": ["jsx"]
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
